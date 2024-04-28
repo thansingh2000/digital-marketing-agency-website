@@ -1,0 +1,56 @@
+@import "mixin.scss";
+@import "color.scss";
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+
+
+header{
+	@include phone{
+		display:none;
+	}
+}
+.site-logo{
+	width:140px;
+	@include phone{
+		width:60px;
+	}
+}
+
+.bg-orange{
+	background-color:$colorOrange;
+}
+.bg-white{
+	background-color:$colorWhite;
+}
+.text-orange{
+	color:$colorOrange;
+}
+
+.site-title{
+	font-size:3rem;
+	font-family: 'Lora', serif;
+	font-weight:900;
+	
+}
+section{
+	
+	background-image:url('https://www.insead.edu/sites/default/files/assets/node/node-65//openprogrammesexecedhomepagepic-resize-620x500.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+.service-card{
+	margin:20px 0px;
+	color:black;
+	border-radius:10px!important;
+	i{
+		font-size:30px;
+	}
+}
+
+
